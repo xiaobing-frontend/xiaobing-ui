@@ -1,0 +1,51 @@
+@import '../../styles/variables.less';
+@import '../../styles/mixins.less';
+
+@tag-prefix-cls: ~'@{art-prefix}-tag';
+
+.@{tag-prefix-cls} {
+  cursor: default;
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: 1.5;
+  border-radius: 4px;
+  .tag-type(@primary, @white);
+  .tag-size(4px, 10px, 14px);
+
+  & + .@{tag-prefix-cls} {
+    margin-left: 8px;
+  }
+  .utils-user-select(none);
+
+  &-primary {
+    .tag-type(@primary, @white);
+  }
+
+  &-danger {
+    .tag-type(@danger, @white);
+  }
+
+  &-warning {
+    .tag-type(@warning, @white);
+  }
+
+  &-info {
+    .tag-type(@info, @white);
+  }
+
+  &-success {
+    .tag-type(@success, @white);
+  }
+
+  &-large {
+    .tag-size(4px, 16px, 14px);
+  }
+
+  &-small {
+    .tag-size(2px, 6px, 12px);
+  }
+
+  &-default {
+    .tag-size(4px, 10px, 13px);
+  }
+}

@@ -1,0 +1,10 @@
+dist
+lib
+es
+node_modules
+yarn-error.log
+.DS_Store
+.vscode
+.cache
+coverage
+.idea
