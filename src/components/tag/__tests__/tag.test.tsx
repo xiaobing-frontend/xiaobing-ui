@@ -13,6 +13,6 @@ describe('test Tag component', () => {
     const element = wrapper.getByText('xixihaha') as HTMLSpanElement
     expect(element).toBeInTheDocument()
     expect(element.tagName).toEqual('SPAN')
-    expect(element).toHaveClass('art-tag art-tag-small art-tag-primary')
+    expect(element).toHaveClass('xiaobing-tag xiaobing-tag-small xiaobing-tag-primary')
   })
 })

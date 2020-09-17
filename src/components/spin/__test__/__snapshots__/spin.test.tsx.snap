@@ -6,38 +6,38 @@ Object {
   "baseElement": <body>
     <div>
       <span
-        class="art-spin art-spin-dot-spin art-spin-spinning"
+        class="xiaobing-spin xiaobing-spin-dot-spin xiaobing-spin-spinning"
       >
         <i
-          class="art-spin-dot-item"
+          class="xiaobing-spin-dot-item"
         />
         <i
-          class="art-spin-dot-item"
+          class="xiaobing-spin-dot-item"
         />
         <i
-          class="art-spin-dot-item"
+          class="xiaobing-spin-dot-item"
         />
         <i
-          class="art-spin-dot-item"
+          class="xiaobing-spin-dot-item"
         />
       </span>
     </div>
   </body>,
   "container": <div>
     <span
-      class="art-spin art-spin-dot-spin art-spin-spinning"
+      class="xiaobing-spin xiaobing-spin-dot-spin xiaobing-spin-spinning"
     >
       <i
-        class="art-spin-dot-item"
+        class="xiaobing-spin-dot-item"
       />
       <i
-        class="art-spin-dot-item"
+        class="xiaobing-spin-dot-item"
       />
       <i
-        class="art-spin-dot-item"
+        class="xiaobing-spin-dot-item"
       />
       <i
-        class="art-spin-dot-item"
+        class="xiaobing-spin-dot-item"
       />
     </span>
   </div>,

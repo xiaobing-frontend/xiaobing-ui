@@ -7,12 +7,12 @@ Object {
     <div>
       <button
         aria-checked="false"
-        class="art-switch"
+        class="xiaobing-switch"
         role="switch"
         type="button"
       >
         <div
-          class="art-switch-handle"
+          class="xiaobing-switch-handle"
         />
       </button>
     </div>
@@ -20,12 +20,12 @@ Object {
   "container": <div>
     <button
       aria-checked="false"
-      class="art-switch"
+      class="xiaobing-switch"
       role="switch"
       type="button"
     >
       <div
-        class="art-switch-handle"
+        class="xiaobing-switch-handle"
       />
     </button>
   </div>,

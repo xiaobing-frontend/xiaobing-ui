@@ -20,7 +20,7 @@ addParameters({
 
 const loaderFn = () => {
   const allExports = [
-    require('../stories/art.stories.mdx'),
+    require('../stories/xiaobing.stories.mdx'),
     require('../stories/contribute.stories.mdx'),
     require('../stories/changeLog.stories.mdx'),
   ]

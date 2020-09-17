@@ -1,6 +1,6 @@
-# Art Design
+# Xiaobing-ui Design
 
-`Art` 严格遵循 [Ant Design](https://ant.design/docs/spec/proximity-cn) 开发原则。
+`Xiaobing-ui` 严格遵循 [Ant Design](https://ant.design/docs/spec/proximity-cn) 开发原则。
 
 > 为了保证代码及组件质量，减少沟通成本，在任何形式的参与前，请先阅读以下内容：
 
@@ -32,8 +32,6 @@
 
 
 ## 设计稿
-
-[art组件设计稿](https://lanhuapp.com/web/#/item/project/board?type=share_mark&pid=3050eb52-9397-408a-82ea-f94190b9c2d0&activeSectionId=&teamId=9df6d36b-f656-4cc3-acf9-a333437de2cc&param=094b1ba8-e42b-4a0c-ade5-562661aea83e)
 
 
 ## 工作流
@@ -124,20 +122,13 @@ Button.defaultProps = {
 }
 ```
 
-### 关于自动化部署
-
->自动化部署使用 [travis](https://travis-ci.com/)
-
-自动化部署监听 master 分支, 当 master 分支 commit 后执行构建脚本
-
-
 ## 标准发布流程
 
 - 版本更新
 - 生成 CHANGELOG
 - 推送至 git 仓库
 - 组件库打包
-- 发布至 yarn
+- 发布至 npm
 - 打 tag 并推送至 git
 
 

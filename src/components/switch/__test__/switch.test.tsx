@@ -27,30 +27,30 @@ const disAbledProps: SwitchProps = {
 describe('test Switch component', () => {
   it('should render close state', () => {
     const wrapper = render(<Switch {...checkeDefaultdProps} />)
-    const element = wrapper.container.querySelector('.art-switch') as HTMLButtonElement
-    expect(element).toHaveClass('art-switch art-switch-checked')
+    const element = wrapper.container.querySelector('.xiaobing-switch') as HTMLButtonElement
+    expect(element).toHaveClass('xiaobing-switch xiaobing-switch-checked')
     fireEvent.click(element)
     expect(element.getAttribute('aria-checked')).toEqual('false')
     expect(wrapper).toMatchSnapshot()
   })
   it('should render disabled when base on disabed state', () => {
     const wrapper = render(<Switch {...disAbledProps} />)
-    const element = wrapper.container.querySelector('.art-switch') as HTMLButtonElement
-    expect(element).toHaveClass('art-switch art-switch-disabled')
+    const element = wrapper.container.querySelector('.xiaobing-switch') as HTMLButtonElement
+    expect(element).toHaveClass('xiaobing-switch xiaobing-switch-disabled')
     fireEvent.click(element)
     expect(haveClickProps.onClick).not.toHaveBeenCalled()
   })
   it('should render deFalutValue state when value is undefined or null', () => {
     const wrapper = render(<Switch {...defaultAndValueProps} />)
-    const element = wrapper.container.querySelector('.art-switch') as HTMLButtonElement
-    expect(element).toHaveClass('art-switch')
+    const element = wrapper.container.querySelector('.xiaobing-switch') as HTMLButtonElement
+    expect(element).toHaveClass('xiaobing-switch')
     fireEvent.click(element)
     expect(element.getAttribute('aria-checked')).toEqual('true')
   })
   it('should render state base on change', () => {
     const wrapper = render(<Switch {...haveClickProps} />)
-    const element = wrapper.container.querySelector('.art-switch') as HTMLButtonElement
-    expect(element).toHaveClass('art-switch')
+    const element = wrapper.container.querySelector('.xiaobing-switch') as HTMLButtonElement
+    expect(element).toHaveClass('xiaobing-switch')
     fireEvent.click(element)
     expect(haveClickProps.checked).toEqual(false)
     expect(haveClickProps.onChange).toHaveBeenCalled()

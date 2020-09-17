@@ -9,8 +9,6 @@
 为了保证代码及组件质量，减少沟通成本，在任何形式的参与前，请先阅读以下内容：
 
 
-
-
 ## 技术栈
 
 > 技术栈严格要求以下形式，注意切不可用`React Class`来书写组件
@@ -118,4 +116,8 @@ Button.defaultProps = {
 
 ## 打包发布
 
-> 执行`npm run build`打包组件库，修改package.json文件的version，然后
+> 执行`npm run build`打包组件库
+> 执行`npm run gc` 提交代码
+> 执行`npm version xx`,xx具体为patch（修订号） 或 minor（次版本号） 或 major（主版本号）
+> 执行`npm publish`
+> 生成文档执行`npm run build:docs`.
