@@ -118,7 +118,7 @@ module.exports = {
       runtimeChunk: true,
     }
     config.resolve.extensions.push('.ts', '.tsx')
-    config.resolve.alias = { "@util": path.resolve(__dirname, '../src/components/_util') }
+    config.resolve.alias = { "xiaobing-util": path.resolve(__dirname, '../src/components/_util') }
     return config
   },
 }

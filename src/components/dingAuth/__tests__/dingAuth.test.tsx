@@ -4,14 +4,14 @@ import DingAuth, { DingProps } from '../dingAuth'
 
 const defaultProps: DingProps = {
   appId: 'testappid123',
-  redirectUri: 'https://vnues.github.io/art-ui',
+  redirectUri: 'https://github.com/zp1112/xiaobing-ui.git',
   state: 'uuid',
 }
 
 const testProps: DingProps = {
   className: 'test-ding',
   appId: 'testappid123',
-  redirectUri: 'https://vnues.github.io/art-ui',
+  redirectUri: 'https://github.com/zp1112/xiaobing-ui.git',
   state: 'uuid',
   onSuccess: (code: string) => {
     return code

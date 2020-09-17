@@ -3,11 +3,11 @@ import "./styles/index.less"
 <Meta title="文档|开始使用" />
 
 
-# Art
+# Xiaobing-ui
 
-[![npm version](https://img.shields.io/david/dev/ant-design/ant-design?style=flat-square)]()
+[![npm version](https://img.shields.io/badge/npm-download-green)]()
 
-`Art` 是模仿 `antd` 的组件库，主要用于研发企业级中后台
+`Xiaobing-ui` 是模仿 `antd` 的组件库
 
 ## 特性
 
@@ -20,20 +20,30 @@ import "./styles/index.less"
 ## Install
 
 ```
-$ npm install Art
+$ npm install xiaobing-ui
 ```
 
 ## Usage
 
 ```tsx
-import { EmojiPanel } from ’Art'
+import { Button } from xiaobing-ui'
 
 ReactDOM.render(
-  <EmojiPanel>
-    <span className="emoji-btn">点击添加表情</span>
-  </EmojiPanel>,
+  <Button type="primary">
+    点我
+  </Button>,
   mountNode
 )
+```
+
+## 引入样式
+
+```tsx
+// 全局引入
+import "xiaobing-ui/dist/xiaobing-ui.min.css";
+
+// 按需引入
+import "xiaobing-ui/lib/button/style";
 ```
 
 ## Test
@@ -47,13 +57,13 @@ yarn test
 #### 指定目录
 
 ```
-yarn test components/emoji-panel
+yarn test components/button
 ```
 
 #### 更新快照
 
 ```
-yarn test components/emoji-panel --updateSnapshot
+yarn test components/button --updateSnapshot
 ```
 
 

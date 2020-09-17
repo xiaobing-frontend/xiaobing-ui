@@ -14,16 +14,16 @@ const testProps: AvatarProps = {
 describe('test Avatar component', () => {
   it('should render correct component', () => {
     const wrapper = render(<Avatar src={url} shape="circle" />)
-    const element = wrapper.container.querySelector('.art-avatar') as HTMLElement
+    const element = wrapper.container.querySelector('.xiaobing-avatar') as HTMLElement
     expect(element.tagName).toEqual('SPAN')
-    expect(element).toHaveClass('art-avatar art-avatar-default')
+    expect(element).toHaveClass('xiaobing-avatar xiaobing-avatar-default')
     expect(wrapper).toMatchSnapshot()
   })
   it('should render correct size', () => {
     const wrapper = render(<Avatar {...testProps} />)
-    const element = wrapper.container.querySelector('.art-avatar') as HTMLElement
+    const element = wrapper.container.querySelector('.xiaobing-avatar') as HTMLElement
     expect(element.tagName).toEqual('SPAN')
-    expect(element).not.toHaveClass('art-avatar-default')
-    expect(element).toHaveClass('art-avatar-large')
+    expect(element).not.toHaveClass('xiaobing-avatar-default')
+    expect(element).toHaveClass('xiaobing-avatar-large')
   })
 })

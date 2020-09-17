@@ -3,10 +3,9 @@
     "baseUrl": "./",
     "lib": ["dom", "dom.iterable", "esnext"],
     "paths": {
-      "art": ["src/components/index.ts"],
-      "@util": ["src/components/_util"]
+      "xiaobing-util": ["src/components/_util"]
     },
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
     "jsx": "react",
     "strict": true,

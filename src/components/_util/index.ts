@@ -1,4 +1,4 @@
 export const getPrefixCls = (type: string): string => {
-  const prefix = 'art'
+  const prefix = 'xiaobing'
   return `${prefix}-${type}`
 }

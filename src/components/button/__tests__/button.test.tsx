@@ -23,7 +23,7 @@ describe('test Button component', () => {
     const element = wrapper.getByText('Nice') as HTMLButtonElement
     expect(element).toBeInTheDocument()
     expect(element.tagName).toEqual('BUTTON')
-    expect(element).toHaveClass('art-btn art-btn-default')
+    expect(element).toHaveClass('xiaobing-btn xiaobing-btn-default')
     expect(element.disabled).toBeFalsy()
     fireEvent.click(element)
     expect(defaultProps.onClick).toHaveBeenCalled()
@@ -33,7 +33,7 @@ describe('test Button component', () => {
     const wrapper = render(<Button {...testProps}>Nice</Button>)
     const element = wrapper.getByText('Nice')
     expect(element).toBeInTheDocument()
-    expect(element).toHaveClass('art-btn-primary art-btn-large klass')
+    expect(element).toHaveClass('xiaobing-btn-primary xiaobing-btn-large klass')
   })
   it('should render a link when type equals link and href is provided', () => {
     const wrapper = render(
@@ -44,7 +44,7 @@ describe('test Button component', () => {
     const element = wrapper.getByText('Link')
     expect(element).toBeInTheDocument()
     expect(element.tagName).toEqual('A')
-    expect(element).toHaveClass('art-btn art-btn-link')
+    expect(element).toHaveClass('xiaobing-btn xiaobing-btn-link')
   })
   it('should render disabled button when disabled set to true', () => {
     const wrapper = render(<Button {...disabledProps}>Nice</Button>)

@@ -1,13 +1,13 @@
 {
   "name": "xiaobing-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "title": "Art Design",
   "description": "art企业中台组件库",
   "author": "zhengping",
   "license": "MIT",
   "homepage": "",
   "keywords": [
-    "art",
+    "xiaobing",
     "component",
     "components",
     "design",

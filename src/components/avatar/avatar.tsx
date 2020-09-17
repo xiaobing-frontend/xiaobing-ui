@@ -1,6 +1,6 @@
 import React, { FC, CSSProperties } from 'react'
 import classNames from 'classnames'
-import { getPrefixCls } from '../_util'
+import { getPrefixCls } from 'xiaobing-util'
 
 const prefixCls = getPrefixCls('avatar')
 
