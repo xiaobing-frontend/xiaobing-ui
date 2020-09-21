@@ -39,16 +39,56 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js|\.ts|\.tsx$/,
-        use: ['babel-loader'],
-        exclude: /node_modules/,
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+        ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url-loader',
+        test: /\.less$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'less-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpg|gif|jpeg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.ts|\.tsx/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+        ],
+      },
+      {
+        test: /\.ts|\.tsx|\.js|\.json/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
         options: {
-          limit: 10000,
-          name: 'static/imgs/[name].[ext]',
+          fix: true,
+          cache: true,
         },
       },
     ],
