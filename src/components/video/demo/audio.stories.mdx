@@ -1,0 +1,27 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import Audio from '../audio'
+import '../style/index'
+
+<Meta title="组件|Audio " component={Audio} />
+
+<br />
+
+# Audio 标签
+
+<br />
+
+## 标签类型
+
+<Preview>
+  <Story name="音乐播放器">
+    <div className="doc-wrapper">
+      <Audio src="http://mp3.9ku.com/hot/2009/08-27/186947.mp3" id="test" />
+    </div>
+  </Story>
+</Preview>
+
+## API
+
+<Story name="API" />
+
+<Props of={Audio} />
