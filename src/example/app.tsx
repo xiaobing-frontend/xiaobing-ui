@@ -3,7 +3,8 @@ import { hot } from 'react-hot-loader/root'
 import '../components/button/style'
 import '../components/switch/style'
 import '../components/spin/style'
-import { Button, DingAuth, Switch, Spin, Icon } from '../components'
+import '../components/audio/style'
+import { Button, Audio, Switch, Spin, Icon } from '../components'
 
 const App = () => {
   const [checked, setChecked] = useState<boolean>(false)
@@ -21,17 +22,7 @@ const App = () => {
       <Button type="primary" disabled>
         disabled
       </Button>
-      <DingAuth
-        appId="xxxx"
-        redirectUri="xxx"
-        width={240}
-        height={300}
-        state="xxx"
-        className="test-dingding"
-        onSuccess={() => {
-          console.log('onSuccess')
-        }}
-      />
+      <div style={{marginTop: '100px'}}><Audio id="xxxx" src="http://mp3.9ku.com/hot/2009/08-27/186947.mp3" /></div>
       <Switch defaultChecked checked={checked} onChange={handleSiwtch} />
       <Spin />
       <br />

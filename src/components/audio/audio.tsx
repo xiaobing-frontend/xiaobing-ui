@@ -24,7 +24,7 @@ export const Audio: FC<AudioProps> = (props: AudioProps) => {
   const [currentTime, setCurrentTime] = useState(0)
   const [showVoiceProgress, setShowVoiceProgress] = useState(false)
   const [showPlayRate, setShowPlayRate] = useState(false)
-    const classes = classnames(prefixCls, className)
+  const classes = classnames(prefixCls, className)
   const formatSecond = (time: number) => {
     const second = Math.floor(time % 60)
     let minite = Math.floor(time / 60)
@@ -87,7 +87,7 @@ export const Audio: FC<AudioProps> = (props: AudioProps) => {
     audio.volume = Number(value) / 100
 
     setVolume(Number(value))
-    setIsMuted(!!value)
+    setIsMuted(!value)
   }
 
   // 倍速播放
